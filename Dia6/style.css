@@ -1,0 +1,81 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#game {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#gameStatus {
+    margin-bottom: 20px;
+}
+
+#players {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.player {
+    width: 40%;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+.card {
+    width: 60px;
+    height: 80px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e7e7e7;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+#result {
+    margin-top: 20px;
+}
